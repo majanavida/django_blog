@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ post.title }}{% endblock %}
+
+{% block content %}
+    <div class="post">
+        <h1>{{post.title}}</h1>
+        <p class="post-date">{{ post.created }}</p>
+        {{ post.body|linebreaks }}
+    </div>
+    <div class="comments">
+        <h2>Comments</h2>
+        {% for comment in comments %}
+            <div class="comment">
+                <p class="comment-info">
+                    Comment by {{ comment.user.username }}, {{ comment.date }}
+                </p>
+                {{ comment.body|linebreaks }}
+            </div>
+        {% empty %}
+            <p>There are no comments yet</p>
+        {% endfor %}
+    {% include 'blog/comment_form.html' %}
+{% endblock %}

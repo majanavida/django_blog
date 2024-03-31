@@ -1,6 +1,6 @@
 body {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -11,11 +11,11 @@ body {
     display: flex;
 }
 
-a.blog:link,
-a.blog:visited,
-a.blog:active,
-a.blog:hover,
-a.blog {
+a.hidden-link:link,
+a.hidden-link:visited,
+a.hidden-link:active,
+a.hidden-link:hover,
+a.hidden-link {
     text-decoration: none;
     color: #000000;
     font-weight: bold;
@@ -32,19 +32,8 @@ a.blog {
     font-size: 20px;
 }
 
-.loginform {
-    font-size: larger;
+.login-block {
     text-align: center;
-}
-
-.login-text {
-    font-size: 25px;
-    text-align: center;
-}
-
-.login-head {
-    text-align: center;
-    font-size: 38px;
 }
 
 #logout-form {
@@ -59,16 +48,57 @@ a.blog {
     cursor: pointer;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     font-size: 18px;
+    font-family: "Oswald", sans-serif;
 }
 
 .post-list-header {
     font-size: 36px;
 }
 
-.post {
+.post-list-display {
     display: block;
-    border: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    border-top: 2px solid #000000;
     padding: 1%;
     margin-bottom: 20px;
     margin-right: 20px;
+}
+
+.password-change-form {
+    text-align: center;
+}
+
+.password-change-done {
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+.post {
+    text-align: left;
+    margin-top: 20px;
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+}
+
+.post-date {
+    color: #9e9e9e;
+}
+
+.pagination {
+    text-align: center;
+}
+
+.comment {
+    border-bottom: 1px solid #000000;
+    resize: none;
+    display: block;
+}
+
+.comment-body-area {
+    width: 40%;
+    height: 100px;
+    resize: none;
 }
