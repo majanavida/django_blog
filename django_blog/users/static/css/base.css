@@ -1,0 +1,74 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.logo {
+    font-size: 48px;
+    margin: 0px 20px 0px 20px;
+    background-color: rgb(206, 206, 206);
+    display: flex;
+}
+
+a.blog:link,
+a.blog:visited,
+a.blog:active,
+a.blog:hover,
+a.blog {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+#content {
+    display: block;
+    margin-left: 40px;
+}
+
+.user {
+    margin: 0px 20px 0px 20px;
+    text-align: right;
+    font-size: 20px;
+}
+
+.loginform {
+    font-size: larger;
+    text-align: center;
+}
+
+.login-text {
+    font-size: 25px;
+    text-align: center;
+}
+
+.login-head {
+    text-align: center;
+    font-size: 38px;
+}
+
+#logout-form {
+    display: inline;
+}
+
+#logout-form button {
+    padding: 0;
+    color: #000000;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+}
+
+.post-list-header {
+    font-size: 36px;
+}
+
+.post {
+    display: block;
+    border: 2px solid #000000;
+    padding: 1%;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
