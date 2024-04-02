@@ -14,11 +14,14 @@ body {
 a.hidden-link:link,
 a.hidden-link:visited,
 a.hidden-link:active,
-a.hidden-link:hover,
 a.hidden-link {
     text-decoration: none;
     color: #000000;
     font-weight: bold;
+}
+
+a.hidden-link:hover {
+    color:rgb(87, 87, 87)
 }
 
 #content {
@@ -95,10 +98,19 @@ li {
     border-bottom: 1px solid #000000;
     resize: none;
     display: block;
+    background-color: bisque;
 }
 
 .comment-body-area {
     width: 40%;
     height: 100px;
     resize: none;
+}
+
+.register-block {
+    text-align: center;
+}
+
+.register-done-block {
+    text-align: center;
 }
